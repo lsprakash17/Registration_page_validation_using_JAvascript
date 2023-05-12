@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+      body {
+        background-image: url('');
+        background-size: cover;
+        background-position: center center;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      #header {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      
+      #header a {
+        color: #333;
+        font-size: 16px;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      
+      #header a:hover {
+        text-decoration: underline;
+      }
+      
+      #content {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+      }
+      
+      #buttons {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      #buttons button {
+        background-color: #333;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 10px;
+        width: 200px;
+      }
+      
+      #buttons button:hover {
+        background-color: #555;
+        cursor: pointer;
+      }
+  

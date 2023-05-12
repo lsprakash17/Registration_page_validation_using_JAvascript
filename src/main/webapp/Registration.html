@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link href="Registration.css" rel="stylesheet">
+	<script src="Registration.jsp"></script>
+</head>
+<body>
+	<div class="testbox">
+		<form action="register" onsubmit="return validateForm()" method="post">
+			<div class="banner">
+				<h1>Registration Form</h1>
+			</div>
+			<div class="item">
+				<p>First Name</p>
+				<input type="text" name="fname" id="fname" required="required" /> <span
+					id="blankMsg" style="color: red"> </span>
+			</div>
+			<div class="item">
+				<p>Last Name</p>
+				<input type="text" name="lname" id="lname" required="required" /> <span
+					id="charMsg" style="color: red"> </span>
+				<br>
+			</div>
+			<div class="item">
+				<p>Mobile Number</p>
+				<input type="tel" pattern="[0-9]{10}" name="mobile"
+					required="required" />
+			</div>
+			<div class="item">
+				<p>Email</p>
+				<input type="text" name="email" required="required" />
+			</div>
+			<div class="question">
+				<p>Gender</p>
+				<table class="question-answer">
+					<tr>
+						<th><input type="radio" value="male" id="radio_1"
+							name="gender" required="required" />Male
+						<th><input type="radio" value="Female" id="radio_2"
+							name="gender" /> Female
+						</th>
+					</tr>
+				</table>
+			</div>
+			<div class="item">
+				<p>Create Password</p>
+				<input type="password" id="pswd1" required="required" value="">
+				<span id="message1" style="color: red"> </span>
+			</div>
+			<div class="item">
+				<p>Confirm Password</p>
+				<input type="password" id="pswd2" value="" name="pwd"> <span
+					id="message2" style="color: red"> </span>
+			</div>
+			<div class="item">
+				<p>Date of Birth</p>
+				<input type="date" name="dob" id="dob" required="required" /> <i
+					class="fas fa-calendar-alt"></i>
+					<span id = "message" style="color:red"> </span>
+			</div>
+			<div class="btn-block">
+				<button type="reset" >Clear</button>
+				<button type="submit">Register</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
